@@ -15,6 +15,19 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *  a) aquesta classe serveix per cercar els meteorits que s'aproximen a la Terra
+ *
+ *  b) està implementada per Artem Rudenko
+ *
+ *  c) la propietat API_KEY_NASA és la clau de la API de la NASA
+ *
+ *  d) la propietat maxMeteorits és la quantitat màxima de meteorits que retorna el mètode getAsteroidsFromNasa (reanomenat a getMeteorits)
+ *
+ *  e) el mètode getAsteroidsFromNasa rep la data a partir de la qual es fa la cerca de meteorits, retorna una llista de meteorits i llança una IOException si no es pot connectar al servidor de la NASA
+ *
+ */
+
 public class MeteoritService {
     public String API_KEY_NASA = "1S7YAGqlynqf8nuMSqxRpMve3WSlvoogEcpDqmIv";
     public int maxMeteorits = 1000;
